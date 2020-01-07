@@ -172,7 +172,7 @@ img {
 }
 .top {
   padding-bottom: 2%;
-  border-bottom: 2px solid #1ad348;
+  border-bottom: 2px solid #00A35E;
   display: flex;
   justify-content: space-between;
 }
@@ -220,12 +220,25 @@ img {
   text-align: center;
   margin-bottom: 3%;
 }
-.sections {
+.things {
   display: flex;
   justify-content: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 2%;
+}
+@media (max-width: 500px) {
+  .things {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.sections {
+  border: 2px solid #00A35E;
   text-align: center;
   position: relative;
-  margin-top: 2%;
+  margin: 2%;
+  margin-bottom: 2%;
 }
 .btn {
   display: block;
@@ -249,4 +262,22 @@ img {
   .btn {
     width: 80%;
   }
+}
+.titleteam {
+  text-align: center;
+  margin: 2%;
+}
+.mainteam {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .mainteam {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.team {
+  text-align: center;
+  margin: 2%;
 }
