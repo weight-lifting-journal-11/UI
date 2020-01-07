@@ -1,20 +1,29 @@
+// Index page info
 .mission {
   text-align: center;
   margin-bottom: 3%;
 }
 
-// .things {
-//     display: flex;
-//     justify-content: center;
-//     text-align: center;
-//     margin-top:2%;
-// }
-.sections {
+// About page info
+.things {
     display: flex;
     justify-content: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-top:2%;
+
+    @media (max-width: 500px) {
+      display: flex;
+      flex-direction: column;
+    }
+}
+.sections { 
+    border: 2px solid #00A35E;
     text-align: center;
     position: relative;
-    margin-top: 2%;
+    margin: 2%;
+    margin-bottom: 2%;
+    // width: 100%;
 }
 
 .btn {
@@ -22,4 +31,23 @@
   @media (max-width: 500px) {
     width: 80%;
   }
+}
+
+// Contact page info
+.titleteam {
+  text-align: center;
+  margin: 2%;
+}
+.mainteam {
+  display: flex;
+  justify-content: space-between;
+  
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.team {
+  text-align: center;
+  margin: 2%;
 }
