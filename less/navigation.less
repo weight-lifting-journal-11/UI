@@ -1,15 +1,16 @@
 .top {
     padding-bottom: 2%;
     border-bottom: 2px solid  #00A35E;
-    ;
     display:flex;
     justify-content: space-between;
-    @media (max-width: 500px){
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
+       
+        @media @phone {
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+    
     .gainz {
-        @media (max-width: 500px){
+        @media @phone{
             text-align: center;
             margin-bottom: 2%;
         }
@@ -20,10 +21,10 @@
         width: 30%;
         padding-top: 2%;
         
-        @media (max-width: 500px){
+        @media @phone {
             display: flex;
             justify-content: space-between;
-            width: 90%;
+            width: 100%;
         
         }
         a {
